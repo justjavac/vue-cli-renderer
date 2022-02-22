@@ -1,6 +1,6 @@
 import type { RendererOptions } from "@vue/runtime-core";
 import { DOMElement } from ".";
-import { DOMNode } from "./dom";
+import { DOMNode, setAttribute, setStyle } from "./dom";
 
 export const patchProp: RendererOptions<DOMNode, DOMElement>["patchProp"] = (
   el,
@@ -15,26 +15,18 @@ export const patchProp: RendererOptions<DOMNode, DOMElement>["patchProp"] = (
 ) => {
   console.log(
     "patchProp",
-    el,
+    el.nodeName,
     key,
     prevValue,
     nextValue,
     isSVG,
-    prevChildren,
-    parentComponent,
+    prevChildren?.map(x => x.type),
+    parentComponent?.type.name,
     parentSuspense,
-    unmountChildren,
+    unmountChildren?.name,
   );
   if (key === "style") {
     setStyle(el, nextValue);
   }
   setAttribute(el, key, nextValue);
 };
-
-function setStyle(el: DOMElement, nextValue: any) {
-  throw new Error("Function not implemented.");
-}
-
-function setAttribute(el: DOMElement, key: string, nextValue: any) {
-  throw new Error("Function not implemented.");
-}

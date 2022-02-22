@@ -8,6 +8,6 @@ defineProps({
 
 <template>
   <View>
-    <Text>{{ count }}</Text>
+    <Text style="color: blue;">{{ count }}</Text>
   </View>
 </template>
