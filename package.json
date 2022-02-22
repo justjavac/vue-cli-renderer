@@ -1,0 +1,54 @@
+{
+  "name": "my-vue-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "rollup -c rollup.config.js --watch",
+    "build": "rollup -c rollup.config.js"
+  },
+  "main": "dist/index.mjs",
+  "dependencies": {
+    "@vue/runtime-core": "^3.2.31",
+    "ansi-escapes": "^4.2.1",
+    "auto-bind": "4.0.0",
+    "chalk": "^4.1.0",
+    "cli-boxes": "^2.2.0",
+    "cli-cursor": "^3.1.0",
+    "cli-truncate": "^2.1.0",
+    "code-excerpt": "^3.0.0",
+    "indent-string": "^4.0.0",
+    "is-ci": "^2.0.0",
+    "lodash": "^4.17.20",
+    "patch-console": "^1.0.0",
+    "signal-exit": "^3.0.2",
+    "slice-ansi": "^3.0.0",
+    "stack-utils": "^2.0.2",
+    "string-width": "^4.2.2",
+    "type-fest": "^0.12.0",
+    "widest-line": "^3.1.0",
+    "wrap-ansi": "^6.2.0",
+    "ws": "^7.5.5",
+    "yoga-layout-prebuilt": "^1.10.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@types/is-ci": "^2.0.0",
+    "@types/lodash": "^4.14.161",
+    "@types/node": "^17.0.18",
+    "@types/signal-exit": "^3.0.0",
+    "@types/sinon": "^9.0.4",
+    "@types/slice-ansi": "^4.0.0",
+    "@types/stack-utils": "^1.0.1",
+    "@types/wrap-ansi": "^3.0.0",
+    "@vue/compiler-sfc": "^3.2.31",
+    "rollup": "^2.67.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-vue": "^6.0.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5",
+    "vue": "^3.2.31"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.31"
+  }
+}
