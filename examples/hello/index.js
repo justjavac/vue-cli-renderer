@@ -12,8 +12,8 @@ const source = `
     </template>
 `;
 
-const ast = sfc.parse(source)
+const ast = sfc.parse(source);
 const render = Vue.compile(ast.descriptor.template.content);
 
-console.log('-'.repeat(50))
-console.log(render.toString())
+console.log("-".repeat(50));
+console.log(render.toString());

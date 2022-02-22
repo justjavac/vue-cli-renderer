@@ -1,7 +1,7 @@
 import { createApp } from "./vuerender";
 import App from "./App.vue";
 
-const { a } = require
+const { a } = require;
 
 const instance = createApp(App).mount("");
 
