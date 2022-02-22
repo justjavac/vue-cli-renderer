@@ -13,7 +13,7 @@ export default [
     plugins: [commonjs(), typescript(), vue()],
   },
   {
-    input: "src/vrender.ts",
+    input: "src/vuerender.ts",
     output: {
       format: "cjs",
       file: "dist/render.js",
