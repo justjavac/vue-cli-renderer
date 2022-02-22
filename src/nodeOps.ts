@@ -45,7 +45,13 @@ export const nodeOps: Omit<RendererOptions<DOMNode, DOMElement>, "patchProp"> =
     },
 
     createElement(type, isSVG, isCustomizedBuiltIn, vnodeProps) {
-      console.log("createElement", type, isSVG, isCustomizedBuiltIn, vnodeProps);
+      console.log(
+        "createElement",
+        type,
+        isSVG,
+        isCustomizedBuiltIn,
+        vnodeProps,
+      );
 
       const node = createNode(type as ElementNames);
 
