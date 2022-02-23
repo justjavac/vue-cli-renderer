@@ -20,7 +20,7 @@ export const patchProp: RendererOptions<DOMNode, DOMElement>["patchProp"] = (
     prevValue,
     nextValue,
     isSVG,
-    prevChildren?.map(x => x.type),
+    prevChildren?.map((x) => x.type),
     parentComponent?.type.name,
     parentSuspense,
     unmountChildren?.name,

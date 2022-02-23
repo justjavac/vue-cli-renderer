@@ -3,8 +3,8 @@
 A custum Vue3 renderer to provided the same component-based UI building
 experience that Vue3 offers in the browser, but for command-line apps. It uses
 [Yoga](https://github.com/facebook/yoga) to build Flexbox layouts in the
-terminal, so most CSS-like props are available in Ink as well. The project is
-based on [ink](https://github.com/vadimdemedes/ink).
+terminal, so most CSS-like props are available in vue-custom-renderer as well.
+The project is based on [ink](https://github.com/vadimdemedes/ink).
 
 ## Usage
 
