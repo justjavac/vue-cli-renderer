@@ -3,6 +3,9 @@
 /.pnp
 .pnp.js
 
+yarn.lock
+package-lock.json
+
 # build
 dist
 
